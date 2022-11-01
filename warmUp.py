@@ -12,10 +12,7 @@ def getWrongAnswers(N: int, C: str) -> str:
             c = c + "B"
         else:
             c = c + "A"
-        
-    print(c)
-            
-getWrongAnswers(3, 'ABA')
+    return c
 # O(n)
 
 
@@ -27,7 +24,5 @@ def getHitProbability(R: int, C: int, G: List[List[int]]) -> float:
     for j in range(C):
       if G[i][j] == 1:
         a+=1
-
-
   return a/(R*C)
 # 0(n²) 
